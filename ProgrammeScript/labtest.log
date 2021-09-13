@@ -1,0 +1,12 @@
+Test Log-
+
+git init
+git add ./
+git status
+git commit -m "msg comment"
+
+
+git branch mybranch create # create brachn
+git checkout mybrachn # change branch
+
+#####
