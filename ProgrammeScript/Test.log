@@ -1,4 +1,57 @@
-Test
-Create another lines in testlog File
-one more line added in file
-line four added#
+Git Commands:
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ git status
+On branch newBranch
+Your branch is up to date with 'origin/newBranch'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProgrammeScript/Test.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ ls
+FileTest  ProgrammeScript/  README.md  Test.log  Testfile
+
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ git status
+On branch newBranch
+Your branch is up to date with 'origin/newBranch'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProgrammeScript/Test.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ git commit -m "new fourth line added no need to use add command as it is existing file"
+On branch newBranch
+Your branch is up to date with 'origin/newBranch'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ProgrammeScript/Test.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ git commit -m "new fourth line added no need to use add command as it is existing file" ./
+[newBranch 2b12dbd] new fourth line added no need to use add command as it is existing file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ppadole@LNAR-R90JTSAH MINGW64 /c/MSDE/PythonProject (newBranch)
+$ git push origin newBranch
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/prashantpadole/PythonProject.git
+   cedfb00..2b12dbd  newBranch -> newBranch
