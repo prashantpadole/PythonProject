@@ -38,7 +38,7 @@ class sendEmailMessage:
         server.ehlo()
         server.starttls()
         server.ehlo()
-        server.login('padole.prashant1.com',password)
+        server.login('padole.prashant1.com','TestPassword')
         server.sendmail(self.fromaddr,self.toaddr,msg.as_string())
         print("email has been sent")
         server.quit()
