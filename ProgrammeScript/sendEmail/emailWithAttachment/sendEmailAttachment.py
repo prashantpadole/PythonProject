@@ -30,7 +30,7 @@ class sendEmailMessage:
         msg.attach(part)
     #     return msg
         print("start")
-        password = getpass.getpass(prompt="Enter Your Password")
+    #    password = getpass.getpass(prompt="Enter Your Password")
         print("end")
     # def sendMessage(self):
         server =smtplib.SMTP('smtp.gmail.com')
