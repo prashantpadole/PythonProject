@@ -59,3 +59,28 @@ print(TestString2[1:10]) #string portion
 print((TestString1[::-1])) # reverse string
 print(TestString1.strip(' ')," and" , TestString2.strip())
 print(set(TestString2))
+
+##### Dictionary
+Dict1={}
+Dict1={1:"Test",2:'Blue',"West":200}
+print(Dict1)
+
+for i,seq in enumerate(Dict1.keys()):
+    print(i," ",seq,"\n")
+
+
+for i in Dict1.values():
+    print(i,"\n")
+
+for i in Dict1.items():
+    print(i,"\n")
+
+print(Dict1.get(1))
+Dict2=Dict1.copy()
+Dict1[0]="New"
+print(Dict2,"\n",Dict1)
+
+import copy
+Dict2=copy.deepcopy(Dict1)
+Dict1[10]="NewTest"
+print(Dict2,"\n",Dict1)
