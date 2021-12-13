@@ -31,17 +31,21 @@ def people_generator(num_people):
 
 t1=time.time()
 # people=people_list(10000000)
-people= people_generator(10000000)
+# people= people_generator(10000000)
 t2=time.time()
 
+#
+#
+#
+# for i in people:
+#     print(i)
+#
+# print("Memory after {} MB".format(mem_profile.memory_usage()))
+# print("Totel execution time is {}".format(t2-t1))
 
-
-
-for i in people:
-    print(i)
-
-print("Memory after {} MB".format(mem_profile.memory_usage()))
-print("Totel execution time is {}".format(t2-t1))
+t=[1,1,2,1,3,4,5]
+t.insert(0,1)
+print(t)
 
 
 

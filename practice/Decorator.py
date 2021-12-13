@@ -19,3 +19,15 @@ def display_info(name,age):
 display_info("John",25)
 display()
 
+
+
+# def display():
+#     print("This is a Test program for Decorator")
+#
+# def display_info(name,age):
+#     print("{} is running test at the age of {}".format(name,age))
+#
+# decorated_function=decorator_function(display)
+# decorated_function()
+# decorated_function=decorator_function(display_info)
+# decorated_function("John",25)
